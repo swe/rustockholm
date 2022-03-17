@@ -1,0 +1,86 @@
+{% extends "layout.html" %}
+{% load static %}
+{% load paginator %}
+{% load text_filters %}
+
+{% block content %}
+<div class="feed">
+    <div class="feed-sidebar-toggle-wrapper">
+        <sidebar-toggler />
+    </div>
+    <aside class="feed-sidebar">
+        <div class="feed-sidebar-block">
+            <ul class="feed-sidebar-list feed-sidebar-menu">
+                <li>
+                    <a href="{% url "index" %}">
+                        🏠 Главная
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url "people" %}">
+                        🌍 Люди
+                    </a>
+                </li>
+                <!--<li>
+                    <a href="{% url "network" %}">
+                        💬 Сеть
+                    </a>
+                </li>-->
+            </ul>
+
+            <ul class="feed-sidebar-list feed-sidebar-menu-small">
+                <li>
+                    <a href="{% url "feed_type" "post" %}" class="{% if post_type == "post" %}feed-sidebar-menu-selected{% endif %}">
+                        📝 Посты
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url "feed_label" "inside" %}" class="{% if label_code == "inside" %}feed-sidebar-menu-selected{% endif %}">
+                        💎️ Инсайты
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url "feed_label" "thread" %}" class="{% if label_code == "thread" %}feed-sidebar-menu-selected{% endif %}">
+                        🗄 Треды
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url "feed_type" "question" %}" class="{% if post_type == "question" %}feed-sidebar-menu-selected{% endif %}">
+                        🤔 Вопросы
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url "feed_type" "battle" %}" class="{% if post_type == "battle" %}feed-sidebar-menu-selected{% endif %}">
+                        🤜 Баттлы
+                        </a>
+                </li>
+                <li>
+                    <a href="{% url "feed_label" "approved" %}" class="{% if label_code == "approved" %}feed-sidebar-menu-selected{% endif %}">
+                        👍 Офигенно
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url "feed_type" "ads" %}" class="{% if post_type == "ads" %}feed-sidebar-menu-selected{% endif %}">
+                        🤑 Объявления
+                    </a>
+                </li>
+            </ul>
+        </div>
+    <!--
+        <div class="feed-sidebar-block">
+            <div class="feed-sidebar-header">Комнаты</div>
+            <div class="feed-sidebar-topics">
+                {% for topic in topics %}
+                    {% include "posts/widgets/topic.html" with topic=topic type="card" %}
+                {% endfor %}
+            </div>
+        </div>
+    -->
+    </aside>
+    <div class="feed-main">
+        {% block feed_content %}
+        {% endblock %}
+    </div>
+
+</div>
+{% endblock %}

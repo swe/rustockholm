@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block title %}
+    {{ title | default:"Админим" }} — {{ block.super }}
+{% endblock %}
+
+{% block content %}
+
+<div class="content compose">
+    <div class="content-header">Админим</div>
+    <div class="block compose-types">
+        <a href="{% url "godmode_network_settings" %}" class="compose-type">
+            <span class="compose-type-icon">💬</span>
+            <span class="compose-type-name">Нетворк</span>
+        </a>
+        <a href="{% url "godmode_digest_settings" %}" class="compose-type">
+            <span class="compose-type-icon">📰</span>
+            <span class="compose-type-name">Дайджест</span>
+        </a>
+    </div>
+</div>
+{% endblock %}
