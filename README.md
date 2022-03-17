@@ -55,7 +55,6 @@ For more information on how to test the telegram bot, run project without docker
 
 We use standard Django testing framework. No magic, really. You can run them from PyCharm or using Django CLI. 
 
-See [docs/test.md](docs/test.md) for more insights.
 
 > We don't have UI tests, sorry. Maybe in the future
 
@@ -71,7 +70,7 @@ We're open for proposals on how to improve our deployments without overcomplicat
 
 ## 🙋‍♂️ How to report a bug or propose a feature?
 
-- 🆕Open [a new issue](https://github.com/rustockholm/rustockholm.club/issues/new). 
+- 🆕Open a new issue. 
   - 🔦 Please, **use a search**, to check, if there is already exied issue!
 - Explain your idea or proposal in all the details: 
   - If it's a **new feature**:
@@ -84,62 +83,13 @@ We're open for proposals on how to improve our deployments without overcomplicat
     
 ## 😍 Contributions
 
-Contributions are welcome.  
-
-The main point of interaction is the [Issues page](https://github.com/rustockholm/rustockholm.club/issues).
-
-Here's our contribution guidelines — [CONTRIBUTING.md](CONTRIBUTING.md).
-
-We also run the public [Github Project Board](https://github.com/rustockholm/rustockholm.club/projects/3) to track progress and develop roadmaps.
-
-> The official development language at the moment is Russian, because 100% of our users speak it. We don't want to introduce unnecessary barriers for them. But we are used to writing commits and comments in English and we won't mind communicating with you in it.
-
-### 😎 I want to write some code
-
-- Open our [Issues page](https://github.com/rustockholm/rustockholm.club/issues) to see the most important tickets at top. 
-- Pick one issue you like and **leave a comment** inside that you're getting it.
-
-**For big changes** open an issues first or (if it's already opened) leave a comment with brief explanation what and why you're going to change. Many tickets hang open not because they cannot be done, but because they cause many logical contradictions that you may not know. It's better to clarify them in comments before sending a PR.
-
-### 🚦Pay attention to issue labels!
-
-#### 🟩 Ready to implement
-
-- **good first issue** — good tickets **for first-timers**. Usually these are simple and not critical things that allow you to quickly feel the code and start contributing to it.
-- **bug** — if **something is not working**, it needs to be fixed, obviously.
-- **critical** — the **first priority** tickets.
-- **improvement** — accepted improvements for an existing module. Like adding a sort parameter to the feed. If improvement requires UI, **be sure to provide a sketch before you start.**
-
-#### 🟨 Discussion is needed
-
-- **new feature** —  completely new features. Usually they're too hard for newbies, leave them **for experienced contributors.**
-- **idea** — **discussion is needed**. Those tickets look adequate, but waiting for real proposals how they will be done. Don't implement them right away.
-
-#### 🟥 Questionable
-
-- [¯\\_(ツ)\_/¯](https://github.com/rustockholm/rustockholm.club/labels/%C2%AF%5C_%28%E3%83%84%29_%2F%C2%AF) - special label for **questionable issues**. (should be closed in 60 days of inactivity)
-- **[no label]** — ticket is new, unclear or still not reviewed. Feel free to comment it but **wait for our maintainers' decision** before starting to implement it.
-
+Contributions are welcome.
 
 ## 🔐 Security and vulnerabilities
 
 If you think you've found a critical vulnerability that should not be exposed to the public yet, you can always email me directly on Telegram [@rustockholm](https://t.me/rustockholm) or by email: [club@alleksy.com](mailto:club@alleksy.com).
 
 Please do not test vulnerabilities in public. If you start spamming the website with "test-test-test" posts or comments, our moderators will ban you even if you had good intentions.
-
-
-## 👍 Our top contributors
-
-Take some time to press F and give some respects to our [best contributors](https://github.com/rustockholm/rustockholm.club/graphs/contributors), who spent their own time to make the club better.
-
-- [@rustockholm](https://github.com/rustockholm)
-- [@dimabory](https://github.com/dimabory)
-- [@devcooch](https://github.com/devcooch)
-- [@nlopin](https://github.com/nlopin)
-- [@fr33mang](https://github.com/fr33mang)
-- [@Vostenzuk](https://github.com/Vostenzuk)
-- [@nikolay-govorov](https://github.com/nikolay-govorov)
-- [@FMajesty](https://github.com/FMajesty)
 
 
 ## 👩‍💼 License 
